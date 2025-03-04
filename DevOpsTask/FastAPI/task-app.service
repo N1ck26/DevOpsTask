@@ -1,0 +1,16 @@
+[Unit]
+Description=FastAPI Task App Service
+After=network.target
+
+[Service]
+User=app
+Group=app
+WorkingDirectory=/home/user/Projects/task/project
+ExecStart=/home/user/Projects/task/project/venv/bin/python /home/user/Projects/task/project/app.py
+Restart=always
+StandardOutput=append:/var/log/task-app.log
+StandardError=append:/var/log/task-app.log
+
+[Install]
+WantedBy=multi-user.target
+
