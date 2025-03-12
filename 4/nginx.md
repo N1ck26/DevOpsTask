@@ -1,2 +1,2 @@
-1. `sudo apt install nginx`
-2. `/etc/ng`
+1. Устанавливаем nginx `sudo apt install nginx`
+2. 
