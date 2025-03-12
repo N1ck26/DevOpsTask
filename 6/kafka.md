@@ -31,7 +31,7 @@
 
 6. Обращение к Kafka UI через веб-форму `http://<ip>:8080`
 
-7. Создание топика: `bin/kafka-topics.sh --create --topic test-topic --bootstrap-server <ip>:9092 --partitions 1 --replication-factor 1`
+7. Создание топика: `bin/kafka-topics.sh --create --topic test-topic --bootstrap-server <ip>:9092 --partitions 1 --replication-factor 1` (либо через UI)
 
 8. Проверка списка топиков: `bin/kafka-topics.sh --list --bootstrap-server <ip>:9092`
 
