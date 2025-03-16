@@ -10,7 +10,7 @@
    import redis
 
    # Создание клиента Redis
-   client = redis.Redis(host='127.0.0.1', port=6379, password='ваш_пароль')
+   client = redis.Redis(host='127.0.0.1', port=6379, password='password')
 
    # Установка значения
    client.set('mykey', 'test connection')
