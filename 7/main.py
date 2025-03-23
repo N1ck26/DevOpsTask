@@ -3,7 +3,7 @@ from fastapi import FastAPI, Depends
 from sqlalchemy import create_engine, Column, Integer, String, select, Boolean
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password@db/test_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password@db:5432/test_db")
 
 # Настройка подключения к БД
 engine = create_engine(DATABASE_URL, echo=True)
